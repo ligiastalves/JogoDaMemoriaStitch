@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jogo da Memória Stitch</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+  </head>
+  <div class="body">
+    <div id="cabecalho">
+    <h1>Jogo do Stitch - Versão duelo</h1>      
+    </div>
+    <div id="cronometro">
+      <div class="contador">
+        <h1 id="watch">00:00:00</h1>
+        <button class="bg-green" onclick="start()">Iniciar</button>
+        <button class="bg-yellow" onclick="pause()">Pausar</button>
+        <button class="bg-red" onclick="window.location.reload()">Atualizar</button>
+        </div>
+      </div>
+    </div>
+  <div id="cartas">
+      <main class="memory-game">
+        <div class="card" data-card="stitch01">
+          <img src="img/stitch01.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>  
+
+        <div class="card" data-card="stitch02">
+          <img src="img/stitch02.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch03">
+          <img src="img/stitch03.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch04">
+          <img src="img/stitch04.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch05">
+          <img src="img/stitch05.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch06">
+          <img src="img/stitch06.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch07">
+          <img src="img/stitch07.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch08">
+          <img src="img/stitch08.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch09">
+          <img src="img/stitch09.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch10">
+          <img src="img/stitch10.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch01">
+          <img src="img/stitch01.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>  
+
+        <div class="card" data-card="stitch02">
+          <img src="img/stitch02.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch03">
+          <img src="img/stitch03.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch04">
+          <img src="img/stitch04.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch05">
+          <img src="img/stitch05.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch06">
+          <img src="img/stitch06.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch07">
+          <img src="img/stitch07.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch08">
+          <img src="img/stitch08.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch09">
+          <img src="img/stitch09.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+
+        <div class="card" data-card="stitch10">
+          <img src="img/stitch10.png" alt="face da carta" class="card-front">
+          <img src="img/box.png" alt="verso da carta" class="card-back">
+        </div>
+        
+    </main>
+  </div>
+    <div id="regras">
+      <h2>Aloha! Preparado para duelar?</h2><br>
+      <br>
+      <p>Convide um(a) amigo(a) para jogar contigo, copie o link do jogo e envie para ele/ela</p><br>
+      <p>Cada jogador(a) terá que jogar 3 rodadas, cada rodada vale 1 ponto, quem fizer 2 pontos: ganha!</p>
+      <p>1ª Rodada: Inicie o crônometro, encontre todos os pares da cartas e pause o cronômetro</p>
+      <p>Anote seu tempo em um papel para poder comparar com seu(sua) adversário(a)</p>
+      <p>Após seu(sua) amigo(a) realizara 1ª rodada, comparem os tempos</p>
+      <p>Quem tiver feito o menor tempo, ganha o ponto.</p><br>
+      <p>Aperte o botão vermelho (atualizar) para recarregar a página e iniciar um novo jogo</p>
+      <p>O ganhador da 1ª rodada, dá inicio a 2ª rodada.</p>
+      <p> Repetir os passos para a 3ª rodada.</p><br>
+      <h2><p> Experiência 626!</p></h2><br>
+      <p> Se o jogador(a) que tiver perdido quizer dar a volta por cima, essa é a chance!</p><br>
+      <p>Caso o perdedor em alguma das 3 rodadas tenha feito um tempo igual seu oponente, ele ganha 1 ponto e empata com seu oponente, ou seja:</p><br>
+      <p>Ele tinha 1 ponto e o vencedor tinha 2 pontos</p>
+      <p>Tempo igual (ganha 1 ponto): Ele empata com o vencedor em 2 x 2 </p><br>
+      <p>O desempate é feito na 4ª rodada da seguinte forma: </p><br>
+      <p> O perdedor poderá se tornar o novo vencedor se ele(ela) vencer seu(sua) oponente com o menor tempo feito de todas as outras rodadas. </p><br><br>
+      <p> Bom jogo!</p>
+    </div>
+    <div id="rodape">
+      Criado por: LgA
+    </div>    
+    <script src="script.js"></script>
+  </div> 
+</html>

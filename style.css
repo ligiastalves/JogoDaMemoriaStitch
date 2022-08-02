@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select:none;
+}
+
+.body{
+  background-color: rgb(54,189,189);
+}
+
+#cabecalho{
+  text-align: center;
+  height: 80px;
+  background-color: rgb(54, 168, 191);
+}
+#cronometro{
+  height: 800px;
+  background-color: rgb(114, 201, 207);
+  width: 20%;
+  float: left;
+}
+
+#cartas{
+  height: 800px;
+  width: 55%;
+  padding: 20px;
+  background-color: rgb(54,189,189);
+  float: left;
+}
+
+#regras{
+  height: 800px;
+  width: 25%;
+  background-color: rgb(114, 201, 207);
+  float: right;
+  text-align: center; justify-self: unset;
+  
+}
+
+#rodape{
+  height: 20px;
+  background-color: rgb(54, 168, 191);
+  clear: both;
+  text-align: center; 
+}
+
+.logo{
+  border-radius: 50px;
+  height: 80px;
+}
+
+.contador {
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: 10%;
+  margin-left: 10%;
+  box-shadow: 0 0 10px #FFF;
+  text-align: center;        
+}
+
+h1 {
+  font-family: 'League Gothic', sans-serif;
+  text-align: center;
+  padding: 1%;
+}
+
+h2 {
+  font-family: 'League Gothic', sans-serif;
+  margin-top: 20px;
+  text-align: center; 
+}
+
+button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-family: 'Segoe UI';
+  font-size: 1.1em;
+  transition: all .5s;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+button:hover {
+  background-color: #a1c0d1;
+}
+
+button:active {
+  background-color: #111;
+}
+
+.bg-green {
+  background-color: #b2d1a1;
+}
+
+.bg-yellow {
+  background-color: #d1cba1;
+}
+
+.bg-red {
+  background-color: #d1a1a1;
+}
+
+.memory-game{
+  height: 540px;
+  width: 540px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.card{
+  height: calc(28% - 10px);
+  width: calc(25% - 10px);
+  margin: 5px;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(1, 1, 1, .3);
+  cursor: pointer;
+  transform: scale(1);
+  transform-style: preserve-3d; /* nao deixa o elemento achatado no plano*/
+  transition: transform .9s;
+}
+
+.card:active{
+  transform: scale(0.97);
+  transition: transform .3s;
+}
+
+.card-back{
+width: 100%;
+height: 100%;
+padding: 20px;
+position: absolute;
+border-radius: 5px;
+background: #e6e6e6;
+backface-visibility: hidden; /* uma propriedade que retira o verso do elemento */
+}
+
+.card-front{
+  transform: rotateY(180deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: #ffffff;
+  backface-visibility: hidden; /* uma propriedade que retira o verso do elemento */
+}
+
+/*flip card animation */
+.card.flip{
+  transform: rotateY(180deg);
+}
+
+@media (max-width: 1024px){
+  main.memory-game{
+    width: 100%;
+  }
+}
