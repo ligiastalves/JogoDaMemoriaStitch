@@ -80,6 +80,7 @@ function twoDigits(digit){
 }
 
 function start(){
+    clearInterval(interval);
     watch();
     interval= setInterval(watch,1000);
 }
